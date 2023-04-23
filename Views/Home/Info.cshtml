@@ -1,0 +1,17 @@
+﻿
+@model Entertainers
+<h1>@Model.EntStageName</h1>
+<p>@Model.EntSsn</p>
+<p>@Model.EntStreetAddress</p>
+<p>@Model.EntCity</p>
+<p>@Model.EntState</p>
+<p>@Model.EntZipCode</p>
+<p>@Model.EntPhoneNumber</p>
+<p>@Model.EntWebPage</p>
+<p>@Model.EntEmailAddress</p>
+<p>@Model.DateEntered</p>
+
+
+
+<a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.EntertainerId">Edit</a>
+<a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.EntertainerId">Delete</a>
